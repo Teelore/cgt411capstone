@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Group6</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/homestyle.css">
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <!-- bio slider -->
+    <link rel="stylesheet" href="css/bioslider.css" />
+    
+	
+	<style>
+	.comment{
+		font-family: OCR A Std, monospace;
+/*        font-family: Stencil Std, fantasy;*/
+		font-style: italic;
+		font-weight: bold;
+		color:white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+        transform: translate(-50%, -50%) ;
+		width:50%; 
+		padding: 7px 0px;
+		background: #eef;
+		border: 4px solid white;
+		background-color:rgba(0,0,0,0.5);
+		z-index: 1000;
+		text-align: center;
+		font-size:25px;
+	    }
+	@media screen and (max-width: 600px) {
+		.comment{
+			font-size: 15px;
+			width: 70%;
+			padding: 0
+			}
+		}
+	
+	* {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 0px 10px 0 40px;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: 1;
+    }
+
+	</style>
+	
+<script>
+	setInterval( function() {
+    $( '.comment' ).fadeOut( 800 ).fadeIn( 200 );
+	}, 2000 );
+</script>
+
+
+	</head>
+	<body>
+	<!-- facebook feed-->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v3.2"></script>
+	
+    <!--navigation-->
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<div class="topnav" id="myTopnav">
+		<div id="gtco-logo"><a href="index.html"><img src="images/rpc.png" width="15%;"></a></div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"><p style="display:none;">a</p></i>
+			</a>
+			<div class="gtcomenu">
+			<a  href="index.html">Rifle</a>
+			<a  href="excolor.html">Pistol</a>
+			<a  href="gallery.html">About</a>
+			<a  href="citations.html">Gallery</a>
+			<a  href="citations.html">Contact Us</a>
+			</div>
+	</div>
+
+
+	<div class="w3-content w3-display-container" style="max-width:100%;">
+
+		  <img class="mySlides" src="images/homeimg3.jpg" style="width:100%; height:500px; object-fit: cover;
+		  }" alt="homeimg1">
+		  <img class="mySlides" src="images/homeimg1.jpg" style="width:100%; height:500px; object-fit: cover;" alt="homeimg2">
+		  <img class="mySlides" src="images/homeimg2.jpg" style="width:100%; height:500px; object-fit: cover;" alt="homeimg3">
+		 
+		  
+		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		  </div>
+	</div>
+
+
+
+	<section id="gtco-content">
+			<div class="variable slider">
+				<div>
+				  <img src="http://placehold.it/200x250?text=1">
+				</div>
+				<div>
+				  <img src="http://placehold.it/200x250?text=2">
+				</div>
+				<div>
+				  <img src="http://placehold.it/200x250?text=3">
+				</div>
+				<div>
+				  <img src="http://placehold.it/200x250?text=4">
+				</div>
+				<div>
+				  <img src="http://placehold.it/200x250?text=5">
+				</div>
+				<div>
+				  <img src="http://placehold.it/200x250?text=6">
+				</div>
+			</div>
+	</section>
+
+<!--facebook feed -->
+    <div id="gtco-contentlower">
+	<div class="fb-post" data-href="https://www.facebook.com/PurdueRPC/posts/2680890011937773" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/PurdueRPC/posts/2680890011937773" class="fb-xfbml-parse-ignore"><p>Thank you to the NRA Foundation and our local Friends of the NRA (Greater Lafayette Friends of the NRA) for their...</p>Posted by <a href="https://www.facebook.com/PurdueRPC/">Purdue Rifle and Pistol Club</a> on&nbsp;<a href="https://developers.facebook.com/PurdueRPC/posts/2680890011937773">Thursday, February 7, 2019</a></blockquote></div>
+   
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FPurdueRPC%2Fposts%2F2680890011937773&width=500&show_text=true&height=275&appId" width="48%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+  
+    <div class="bio"> 
+        <div style="float:none; text-align: center;"><strong>Club Members</strong></div>
+		<section id="l_slider">
+		  <input type="radio" name="slider" id="s1">
+		  <input type="radio" name="slider" id="s2">
+		  <input type="radio" name="slider" id="s3" checked>
+		  <input type="radio" name="slider" id="s4">
+		  <input type="radio" name="slider" id="s5">
+		  <label for="s1" id="slide1"><div class="title"><strong>Name</strong><p>subtitle</p></div></label>
+		  <label for="s2" id="slide2"><div class="title"><strong>Name</strong><p>subtitle</p></div></label>
+		  <label for="s3" id="slide3"><div class="title"><strong>Name</strong><p>subtitle</p></div></label>
+		  <label for="s4" id="slide4"><div class="title"><strong>Name</strong><p>subtitle</p></div></label>
+		  <label for="s5" id="slide5"><div class="title"><strong>Name</strong><p>subtitle</p></div></label>
+		</section>
+    </div>
+   
+    </div>
+
+	<footer id="gtco-footer" role="contentinfo">
+       
+	</footer>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="js/slick.js"></script>
+
+
+
+    <script>
+    //topnav
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+
+  //mySlides
+
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+
+  <!-- slick -->
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+    });
+  </script>
+
+
+ <!-- 3d slider -->
+
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Group6</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/pistolstyle.css">
+    
+
+
+	</head>
+	<body>
+	<!-- facebook feed-->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v3.2"></script>
+	
+    <!--navigation-->
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<div class="topnav" id="myTopnav">
+		<div id="gtco-logo"><a href="index.html"><img src="images/rpc.png" width="15%;"></a></div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"><p style="display:none;">a</p></i>
+			</a>
+			<div class="gtcomenu">
+			<a  href="rifle.html">Rifle</a>
+			<a  href="pistol.html">Pistol</a>
+			<a  href="about.html">About</a>
+			<a  href="gallery.html">Gallery</a>
+			<a  href="contactus.html">Contact Us</a>
+			</div>
+	</div>
+
+	<div class="w3-content w3-display-container" style="max-width:100%;">
+
+		  <img class="mySlides" src="images/homeimg3.jpg" style="width:100%; height:500px; object-fit: cover;
+		  }" alt="homeimg1">
+		  <img class="mySlides" src="images/homeimg1.jpg" style="width:100%; height:500px; object-fit: cover;" alt="homeimg2">
+		  <img class="mySlides" src="images/homeimg2.jpg" style="width:100%; height:500px; object-fit: cover;" alt="homeimg3">
+		 
+		  
+		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+	
+	<section id="gtco-content">
+    <div id="teamabout">
+    	<div class="teamtext">
+          <h4><strong>About the Pistol Club</strong></h4>
+          <p>&nbsp;&nbsp; The deadline bobs before a herd. How will the associated coke launch the director? A happier wire hurts within the fish. The silly grandmother ascends in the liberal. The ecology bounces with the morning gas.</p>
+          <p>&nbsp;&nbsp;  The deadline bobs before a herd. How will the associated coke launch the director? A happier wire hurts within the fish. The silly grandmother ascends in the liberal. The ecology bounces with the morning gas. A happier wire hurts within the fish. The silly grandmother ascends in the liberal. The ecology bounces with the morning gas</p>
+        </div>
+        <div class="teamimg"></div>
+    </div>
+	</section>
+   
+    <section class="gtco-content2">
+    <h5><strong>Pistol Team</strong></h5>
+    <ul class="pistolbio">
+    	<li><img src="images/bio1.jpg"><p>name</p></li>
+    	<li><img src="images/bio2.jpg"><p>name</p></li>
+    	<li><img src="images/bio3.jpg"><p>name</p></li>
+    	<li><img src="images/bio4.jpg"><p>name</p></li>
+    	<li><img src="images/bio5.jpg"><p>name</p></li>	
+    </ul>
+    </section>
+
+    <section class="gtco-content2" style="height: 200px; margin:80px auto;">
+    <h5><strong>Pistol Shooting Events</strong></h5>
+    <ul class="pistolevent">
+		<li><p><strong><u>Air Pistol(10m)</u></strong>
+    	    <br/>• 0.177 caliber pellets
+		    <br/>• 60 shots within 1 hour 45 minutes</p>
+		</li>
+ 		<li><p><strong><u>Air Pistol(10m)</u></strong>
+    	    <br/>• 0.177 caliber pellets
+		    <br/>• 60 shots within 1 hour 45 minutes</p>
+		</li>		<li><p><strong><u>Air Pistol(10m)</u></strong>
+    	    <br/>• 0.177 caliber pellets
+		    <br/>• 60 shots within 1 hour 45 minutes</p>
+		</li>		<li><p><strong><u>Air Pistol(10m)</u></strong>
+    	    <br/>• 0.177 caliber pellets
+		    <br/>• 60 shots within 1 hour 45 minutes</p>
+		</li>
+    </ul>
+    </section>
+     
+
+	<footer id="gtco-footer" role="contentinfo">
+       
+	</footer>
+	
+	</div>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+    //topnav
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+
+  //mySlides
+
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+
+  <!-- slick -->
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+    });
+  </script>
+
+
+ <!-- 3d slider -->
+
+	</body>
+</html>
